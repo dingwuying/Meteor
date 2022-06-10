@@ -22,7 +22,7 @@
         "import/prefer-default-export" : "off",
         "react/function-component-definition": "off",
         "import/no-unresolved": "off",
-        "object-shorthand": 0
+        "object-shorthand": "off"
     },
     "globals": {
     }

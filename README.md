@@ -1,1 +1,1 @@
-#  improved-succotash
+#  Meteor project

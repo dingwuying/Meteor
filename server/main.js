@@ -1,6 +1,2 @@
 import { Meteor } from 'meteor/meteor';
-
-
-Meteor.startup(() => {
-
-});
+import './api/users';

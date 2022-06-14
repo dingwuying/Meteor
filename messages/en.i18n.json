@@ -1,0 +1,9 @@
+{
+    "navigation": {
+        "home" : "Home",
+        "about" : "About",
+        "contact" : "Contact",
+        "signUp": "Sign up",
+        "signIn": "Sign in"
+    }
+}

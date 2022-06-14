@@ -1,18 +1,21 @@
 import React from 'react';
 import { Menu, Col, Row } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
+import i18n from 'meteor/universe:i18n';
 import './NavbarStyle.css';
+
+const T = i18n.createComponent();
 
 export const Navbar = () => {
   const leftItems = [
-    { label: 'Home', key: 'home' },
-    { label: 'About', key: 'about' },
-    { label: 'Contact', key: 'contact' },
+    { label: <T>navigation.home</T>, key: 'home' },
+    { label: <T>navigation.about</T>, key: 'about' },
+    { label: <T>navigation.contact</T>, key: 'contact' },
   ];
 
   const rightItems = [
-    { label: 'Sign up', key: 'Signup' },
-    { label: 'Sign in', key: 'Signin' },
+    { label: <T>navigation.signUp</T>, key: 'signup' },
+    { label: <T>navigation.signIn</T>, key: 'signin' },
     { key: 'giticon', icon: <GithubOutlined /> },
   ];
 

@@ -23,8 +23,8 @@ export const Signup = () => {
       autoComplete="off"
     >
       <Form.Item
-        label="Username"
-        name="username"
+        label="email"
+        name="email"
         rules={[{ required: true, message: 'Please input your username!' }]}
       >
         <Input />

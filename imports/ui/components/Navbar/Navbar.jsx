@@ -57,13 +57,17 @@ export const Navbar = () => {
 
   return (
 
-    <Row>
-      <Col flex={9}>
-        <Menu items={leftItems} mode="horizontal" className="navbar" />
-      </Col>
-      <Col flex={1}>
-        <Menu items={rightItems} mode="horizontal" className="navbar" />
-      </Col>
-    </Row>
+    <div className="Navbar-container">
+      <div className="navbar-inner-container" style={{ maxWidth: '1600px', margin: '0 auto' }}>
+        <Row>
+          <Col flex={9}>
+            <Menu items={leftItems} mode="horizontal" className="navbar" style={{ borderBottom: '0px' }} />
+          </Col>
+          <Col flex={1}>
+            <Menu items={rightItems} mode="horizontal" className="navbar" style={{ borderBottom: '0px' }} />
+          </Col>
+        </Row>
+      </div>
+    </div>
   );
 };

@@ -8,17 +8,21 @@ import {
   Input,
   Button,
 } from 'antd';
+import { isVerified } from '../../../api/helpers';
 
 export const Signin = () => {
   const navigate = useNavigate();
   const userSignIn = (values) => {
-    console.log(values);
+    console.log('signin', values);
     Meteor.loginWithPassword(values.email, values.password, (err) => {
       if (err) {
         // eslint-disable-next-line no-console
-        console.log(err);
-      } else {
+        console.log('enters err', err.error);
+      } else
+      if (isVerified(Meteor.user())) {
         navigate('/');
+      } else {
+        console.log('user not verfied');
       }
     });
   };

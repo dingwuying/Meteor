@@ -1,0 +1,33 @@
+.form_inner_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form_border_container {
+    max-width: 500px;
+    margin: 110px auto;
+    height: 500px;
+}
+
+.mt_145 {
+    margin-top: 145px !important;
+}
+
+.form_border_container {
+    max-width: 500px;
+    margin: 110px auto;
+    height: 500px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    background: linear-gradient(#141e30, #243b55);
+    border: 1px solid transparent;
+}
+
+.form_last_child {
+    margin-left: 100px;
+}
+
+[title="email"],
+[title="password"] {
+    color: #fff !important;
+}
